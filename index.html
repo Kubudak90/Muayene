@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dr. Cihad Gök | Estetik Klinik — Botoks · PRP · Mezoterapi</title>
-  <meta name="description" content="Dr. Cihad Gök estetik kliniği. Botoks, PRP ve mezoterapi uygulamaları. Bulgaristan. Online randevu — sadece Cumartesi & Pazar." />
+  <title>Dr. Cihad Gök | Естетична клиника — Ботокс · PRP · Мезотерапия</title>
+  <meta name="description" content="Dr. Cihad Gök естетична клиника. Ботокс, PRP и мезотерапия. България. Онлайн записване — само събота и неделя." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -17,15 +17,19 @@
     <div class="container nav__inner">
       <a href="#hero" class="brand">
         <span class="brand__mark">CG</span>
-        <span class="brand__text">Dr. Cihad Gök<small>Estetik Klinik</small></span>
+        <span class="brand__text">Dr. Cihad Gök<small data-i18n="brandSub">Естетична клиника</small></span>
       </a>
       <nav class="nav__links">
-        <a href="#services">Hizmetler</a>
-        <a href="#about">Hakkında</a>
-        <a href="#contact">İletişim</a>
-        <a href="#booking" class="btn btn--sm">Randevu Al</a>
+        <a href="#services" data-i18n="navServices">Услуги</a>
+        <a href="#about" data-i18n="navAbout">За нас</a>
+        <a href="#contact" data-i18n="navContact">Контакти</a>
+        <a href="#booking" class="btn btn--sm" data-i18n="navBook">Запази час</a>
+        <div class="lang" id="langSwitch">
+          <button type="button" data-lang="bg" class="active">BG</button>
+          <button type="button" data-lang="tr">TR</button>
+        </div>
       </nav>
-      <button class="nav__toggle" id="navToggle" aria-label="Menü">☰</button>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu">☰</button>
     </div>
   </header>
 
@@ -33,21 +37,21 @@
   <section class="hero" id="hero">
     <div class="container hero__inner">
       <div class="hero__copy">
-        <p class="eyebrow">Bulgaristan · Estetik &amp; Güzellik</p>
-        <h1>Doğal güzelliğinizi <em>uzman ellerde</em> ortaya çıkarın</h1>
-        <p class="lead">Dr. Cihad Gök kliniğinde Botoks, PRP ve mezoterapi uygulamaları; kişiye özel, güvenli ve doğal sonuçlar için.</p>
+        <p class="eyebrow" data-i18n="heroEyebrow">България · Естетика и красота</p>
+        <h1 data-i18n-html="heroTitle">Разкрийте естествената си красота <em>в опитни ръце</em></h1>
+        <p class="lead" data-i18n="heroLead">В клиниката на Dr. Cihad Gök — ботокс, PRP и мезотерапия за безопасни и естествени резултати, съобразени с вас.</p>
         <div class="hero__cta">
-          <a href="#booking" class="btn">Online Randevu Al</a>
-          <a href="#services" class="btn btn--ghost">Hizmetleri Gör</a>
+          <a href="#booking" class="btn" data-i18n="heroCtaBook">Онлайн записване</a>
+          <a href="#services" class="btn btn--ghost" data-i18n="heroCtaServices">Вижте услугите</a>
         </div>
-        <p class="hero__note">🗓️ Randevular yalnızca <strong>Cumartesi &amp; Pazar</strong> · Her seans 45 dk</p>
+        <p class="hero__note" data-i18n-html="heroNote">🗓️ Записванията са само в <strong>събота и неделя</strong> · Всеки сеанс 45 мин</p>
       </div>
       <div class="hero__visual" aria-hidden="true">
         <div class="blob"></div>
         <div class="hero__card">
           <span class="hero__card-icon">🌿</span>
-          <strong>Kişiye özel bakım</strong>
-          <small>Her cilt eşsizdir</small>
+          <strong data-i18n="heroCardTitle">Индивидуална грижа</strong>
+          <small data-i18n="heroCardSub">Всяка кожа е уникална</small>
         </div>
       </div>
     </div>
@@ -56,33 +60,33 @@
   <!-- TRUST STRIP -->
   <div class="strip">
     <div class="container strip__inner">
-      <div><strong>500+</strong><span>Mutlu Hasta</span></div>
-      <div><strong>10+ Yıl</strong><span>Deneyim</span></div>
-      <div><strong>%100</strong><span>Steril Ortam</span></div>
-      <div><strong>Doğal</strong><span>Sonuçlar</span></div>
+      <div><strong>500+</strong><span data-i18n="stat1">Доволни пациенти</span></div>
+      <div><strong data-i18n="stat2n">10+ год.</strong><span data-i18n="stat2">Опит</span></div>
+      <div><strong>100%</strong><span data-i18n="stat3">Стерилна среда</span></div>
+      <div><strong data-i18n="stat4n">Естествени</strong><span data-i18n="stat4">Резултати</span></div>
     </div>
   </div>
 
   <!-- SERVICES -->
   <section class="section" id="services">
     <div class="container">
-      <p class="eyebrow eyebrow--center">Hizmetlerimiz</p>
-      <h2 class="section__title">Size özel estetik çözümler</h2>
+      <p class="eyebrow eyebrow--center" data-i18n="servicesEyebrow">Нашите услуги</p>
+      <h2 class="section__title" data-i18n="servicesTitle">Естетични решения, специално за вас</h2>
       <div class="cards">
         <article class="card">
           <span class="card__icon">💉</span>
-          <h3>Botoks</h3>
-          <p>Mimik çizgileri ve kırışıklıkların giderilmesinde doğal, kontrollü ve geçici uygulamalar.</p>
+          <h3 data-i18n="svc1Title">Ботокс</h3>
+          <p data-i18n="svc1Desc">Естествено и контролирано премахване на мимическите бръчки.</p>
         </article>
         <article class="card">
           <span class="card__icon">🩸</span>
-          <h3>PRP</h3>
-          <p>Kendi kanınızdan elde edilen plazma ile cilt yenileme ve saç dökülmesine destek tedavi.</p>
+          <h3 data-i18n="svc2Title">PRP</h3>
+          <p data-i18n="svc2Desc">Обновяване на кожата и подкрепа при косопад чрез плазма от собствената ви кръв.</p>
         </article>
         <article class="card">
           <span class="card__icon">✨</span>
-          <h3>Mezoterapi</h3>
-          <p>Vitamin ve mineral kokteyli ile cildin nemlendirilmesi, ışıltı ve canlılık kazandırma.</p>
+          <h3 data-i18n="svc3Title">Мезотерапия</h3>
+          <p data-i18n="svc3Desc">Хидратиране, сияние и жизненост на кожата чрез коктейл от витамини и минерали.</p>
         </article>
       </div>
     </div>
@@ -95,13 +99,13 @@
         <div class="about__avatar">CG</div>
       </div>
       <div class="about__copy">
-        <p class="eyebrow">Hakkında</p>
+        <p class="eyebrow" data-i18n="aboutEyebrow">За нас</p>
         <h2 class="section__title">Dr. Cihad Gök</h2>
-        <p>Estetik uygulamalarda hastaların doğal görünümünü koruyan, abartısız ve güvenli sonuçları önceleyen bir yaklaşıma sahiptir. Her hasta için kişiye özel planlama yapar; konfor, hijyen ve memnuniyeti ön planda tutar.</p>
+        <p data-i18n="aboutText">При естетичните процедури предпочита естествен вид, дискретни и безопасни резултати. За всеки пациент изготвя индивидуален план, поставяйки комфорта, хигиената и удовлетворението на първо място.</p>
         <ul class="ticks">
-          <li>Kişiye özel değerlendirme ve planlama</li>
-          <li>Steril ve modern klinik ortamı</li>
-          <li>Doğal ve dengeli sonuç anlayışı</li>
+          <li data-i18n="aboutTick1">Индивидуална оценка и планиране</li>
+          <li data-i18n="aboutTick2">Стерилна и модерна клинична среда</li>
+          <li data-i18n="aboutTick3">Естествени и балансирани резултати</li>
         </ul>
       </div>
     </div>
@@ -110,49 +114,49 @@
   <!-- BOOKING -->
   <section class="section" id="booking">
     <div class="container">
-      <p class="eyebrow eyebrow--center">Randevu</p>
-      <h2 class="section__title">Online Randevu Al</h2>
-      <p class="section__sub">Kliniğimiz yalnızca <strong>Cumartesi ve Pazar</strong> hizmet vermektedir. İlk seans 08:00, son seans 15:00; her seans 45 dakikadır.</p>
+      <p class="eyebrow eyebrow--center" data-i18n="bookEyebrow">Записване</p>
+      <h2 class="section__title" data-i18n="bookTitle">Онлайн записване на час</h2>
+      <p class="section__sub" data-i18n-html="bookSub">Клиниката работи само в <strong>събота и неделя</strong>. Първи сеанс 08:00, последен 15:00; всеки сеанс е 45 минути.</p>
 
       <div class="booking">
         <!-- Step 1: day -->
         <div class="booking__panel">
-          <h3 class="booking__step"><span>1</span> Gün seçin</h3>
-          <div class="days" id="daysList"><!-- günler JS ile --></div>
+          <h3 class="booking__step"><span>1</span> <span data-i18n="bookStep1">Изберете ден</span></h3>
+          <div class="days" id="daysList"></div>
         </div>
 
         <!-- Step 2: slot -->
         <div class="booking__panel">
-          <h3 class="booking__step"><span>2</span> Saat seçin</h3>
+          <h3 class="booking__step"><span>2</span> <span data-i18n="bookStep2">Изберете час</span></h3>
           <div class="slots" id="slotsList">
-            <p class="muted" id="slotsHint">Önce bir gün seçin.</p>
+            <p class="muted" id="slotsHint" data-i18n="bookHint">Първо изберете ден.</p>
           </div>
         </div>
 
         <!-- Step 3: details -->
         <div class="booking__panel">
-          <h3 class="booking__step"><span>3</span> Bilgileriniz</h3>
+          <h3 class="booking__step"><span>3</span> <span data-i18n="bookStep3">Вашите данни</span></h3>
           <form id="bookingForm" class="bform" novalidate>
-            <label>Ad Soyad
-              <input type="text" id="fName" required placeholder="Adınız Soyadınız" />
+            <label data-i18n="fLabelName">Име и фамилия
+              <input type="text" id="fName" required data-i18n-ph="fPhName" placeholder="Вашето име и фамилия" />
             </label>
-            <label>Telefon
+            <label data-i18n="fLabelPhone">Телефон
               <input type="tel" id="fPhone" required placeholder="+359 ..." />
             </label>
-            <label>Hizmet
+            <label data-i18n="fLabelService">Услуга
               <select id="fService">
-                <option>Botoks</option>
-                <option>PRP</option>
-                <option>Mezoterapi</option>
-                <option>Danışmanlık / Karar verilecek</option>
+                <option data-i18n="svc1Title">Ботокс</option>
+                <option data-i18n="svc2Title">PRP</option>
+                <option data-i18n="svc3Title">Мезотерапия</option>
+                <option data-i18n="fServiceConsult">Консултация / ще решим</option>
               </select>
             </label>
-            <label>Not (opsiyonel)
-              <textarea id="fNote" rows="2" placeholder="Eklemek istedikleriniz..."></textarea>
+            <label data-i18n="fLabelNote">Бележка (по избор)
+              <textarea id="fNote" rows="2" data-i18n-ph="fPhNote" placeholder="Какво искате да добавите..."></textarea>
             </label>
-            <div class="bform__summary" id="summary">Seçili randevu: <strong>—</strong></div>
-            <button type="submit" class="btn btn--full" id="submitBtn" disabled>Randevuyu Onayla</button>
-            <p class="bform__hint">Onayladığınızda randevu talebiniz WhatsApp üzerinden kliniğe iletilir.</p>
+            <div class="bform__summary" id="summary"></div>
+            <button type="submit" class="btn btn--full" id="submitBtn" disabled data-i18n="fSubmit">Потвърди записването</button>
+            <p class="bform__hint" data-i18n="fSubmitHint">След потвърждение заявката ви се изпраща към клиниката чрез WhatsApp.</p>
           </form>
         </div>
       </div>
@@ -163,19 +167,19 @@
   <section class="section section--alt" id="contact">
     <div class="container contact__inner">
       <div>
-        <p class="eyebrow">İletişim</p>
-        <h2 class="section__title">Bize ulaşın</h2>
+        <p class="eyebrow" data-i18n="navContact">Контакти</p>
+        <h2 class="section__title" data-i18n="contactTitle">Свържете се с нас</h2>
         <ul class="contact__list">
-          <li><span>📍</span> Bulgaristan</li>
+          <li><span>📍</span> <span data-i18n="contactLocation">България</span></li>
           <li><span>📞</span> <a href="tel:+359000000000" id="contactPhone">+359 00 000 00 00</a></li>
-          <li><span>💬</span> <a href="#" id="contactWa" target="_blank" rel="noopener">WhatsApp ile yazın</a></li>
-          <li><span>🕒</span> Cumartesi &amp; Pazar · 08:00 – 16:00</li>
+          <li><span>💬</span> <a href="#" id="contactWa" target="_blank" rel="noopener" data-i18n="contactWaText">Пишете в WhatsApp</a></li>
+          <li><span>🕒</span> <span data-i18n="contactHours">Събота и неделя · 08:00 – 16:00</span></li>
         </ul>
       </div>
       <div class="contact__cta">
-        <h3>Sorularınız mı var?</h3>
-        <p>Uygulamalar ve fiyatlar hakkında bilgi almak için WhatsApp üzerinden bize yazabilirsiniz.</p>
-        <a href="#" id="contactWaBtn" class="btn" target="_blank" rel="noopener">WhatsApp'tan Yaz</a>
+        <h3 data-i18n="contactCtaTitle">Имате въпроси?</h3>
+        <p data-i18n="contactCtaText">За информация относно процедурите и цените ни пишете в WhatsApp.</p>
+        <a href="#" id="contactWaBtn" class="btn" target="_blank" rel="noopener" data-i18n="contactCtaBtn">Пишете в WhatsApp</a>
       </div>
     </div>
   </section>
@@ -183,8 +187,8 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer__inner">
-      <span>© <span id="year"></span> Dr. Cihad Gök — Estetik Klinik</span>
-      <span class="muted">Bu site bilgilendirme amaçlıdır; tıbbi tavsiye yerine geçmez.</span>
+      <span>© <span id="year"></span> Dr. Cihad Gök — <span data-i18n="brandSub">Естетична клиника</span></span>
+      <span class="muted" data-i18n="footerNote">Този сайт е с информационна цел и не замества медицинска консултация.</span>
     </div>
   </footer>
 

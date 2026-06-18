@@ -3,6 +3,7 @@
 Botoks · PRP · Mezoterapi kliniği için tek sayfa tanıtım sitesi ve online randevu sistemi (Bulgaristan).
 
 ## Özellikler
+- **İki dilli**: Bulgarca (varsayılan) + Türkçe — sağ üstteki BG/TR düğmesiyle anında geçiş, seçim hatırlanır
 - Şık, mobil uyumlu tanıtım sitesi (Hizmetler, Hakkında, İletişim)
 - Online randevu sistemi:
   - Yalnızca **Cumartesi & Pazar**
